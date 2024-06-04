@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d6c0cdb8-6ffc-4b24-9177-2be380f3e641}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="benchmark\profile_berkeley.py" />
+    <Compile Include="example\dta_meso_basic.py" />
+    <Compile Include="example\haversine.py" />
+    <Compile Include="example\queue_class.py" />
+    <Compile Include="example\__init__.py" />
+    <Compile Include="game\extract_vehicle_locations.py" />
+    <Compile Include="game\__init__.py" />
+    <Compile Include="model\agent.py" />
+    <Compile Include="model\dta_meso_berkeley.py" />
+    <Compile Include="model\dta_meso_bolinas3.py" />
+    <Compile Include="model\dta_meso_butte.py" />
+    <Compile Include="model\game_animation.py" />
+    <Compile Include="model\network.py" />
+    <Compile Include="model\queue_class.py" />
+    <Compile Include="model\queue_class_ce170.py" />
+    <Compile Include="model\queue_class_ce170_separate.py" />
+    <Compile Include="model\spatial_queue_array.py" />
+    <Compile Include="model\__init__.py" />
+    <Compile Include="projects\bolinas_civic\bolinas_civic.py" />
+    <Compile Include="projects\bolinas_civic\demand_inputs\simple_od.py" />
+    <Compile Include="projects\bolinas_civic\query_path.py" />
+    <Compile Include="projects\bolinas_civic\queue_class.py" />
+    <Compile Include="projects\bolinas_civic\run_traffic_simulation.py" />
+    <Compile Include="projects\bolinas_civic\__init__.py" />
+    <Compile Include="util\dta_meso.py" />
+    <Compile Include="util\dta_meso_keplergl.py" />
+    <Compile Include="util\haversine.py" />
+    <Compile Include="util\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\r0_fire3_comm3_vphh2_vistor300_contra0_close0mflame_shelter0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="benchmark" />
+    <Folder Include="example" />
+    <Folder Include="game" />
+    <Folder Include="images" />
+    <Folder Include="model" />
+    <Folder Include="projects\" />
+    <Folder Include="projects\bolinas_civic" />
+    <Folder Include="projects\bolinas_civic\demand_inputs" />
+    <Folder Include="util" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

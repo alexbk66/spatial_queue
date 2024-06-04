@@ -9,6 +9,9 @@
 !*.ipynb
 !*.md
 !*.gif
+!*.pyproj
+!*.sln
+
 # !projects/bolinas_civic/network_inputs/*
 # !projects/bolinas_civic/demand_inputs/*
 
